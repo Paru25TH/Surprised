@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+h2 {
+  text-align: center;
+  color: #ff85c0;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #ff80ab;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Kanit', sans-serif;
+  color: #fff;
+}
+
+.ข้อความ, .แฟน, .หัวใจ {
+  position: absolute;
+  animation: ลอยขึ้น 10s linear infinite;
+  user-select: none;
+}
+
+.ข้อความ {
+  font-size: 1.5rem;
+  color: #ff85c0;
+  text-shadow: 0 0 5px #ff80ab, 0 0 10px #ff4081;
+}
+
+.หัวใจ {
+  color: red;
+  font-size: 2rem;
+}
+
+.แฟน img {
+  width: 120px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #fff3;
+}
+
+@keyframes ลอยขึ้น {
+  from {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20vh) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.แถบควบคุมเสียง {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.ปุ่มเสียง {
+  background-color: #ff85c0;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px #ff80ab;
+}
+
+.ครบรอบ {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffe6f0;
+  text-shadow: 0 0 10px #ff4081, 0 0 30px #ff80ab;
+  z-index: 999;
+}
+
+body.ล็อกอิน {
+  background: #0f0c29;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Kanit', sans-serif;
+}
+
+.ล็อกอิน-กล่อง {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 133, 192, 0.6);
+}
+
+.ล็อกอิน-กล่อง input {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.ล็อกอิน-กล่อง button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff85c0;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff80ab;
+}
