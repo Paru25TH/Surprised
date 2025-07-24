@@ -17,8 +17,8 @@ const ข้อความ = [
 ];
 
 const แฟน = [
-  "img/love1.jpg", "img/love2.jpg", "img/love3.jpg", "img/love4.jpg",
-  "img/love5.jpg", "img/love6.jpg", "img/love7.jpg", "img/love8.jpg",
+  "love1.jpg", "love2.jpg", "love3.jpg", "love4.jpg",
+  "love5.jpg", "love6.jpg", "love7.jpg", "love8.jpg",
 ];
 
 function สุ่มที่(x) {
